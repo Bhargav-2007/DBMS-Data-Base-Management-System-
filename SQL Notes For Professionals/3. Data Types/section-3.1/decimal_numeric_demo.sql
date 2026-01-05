@@ -15,13 +15,6 @@ INSERT INTO PriceList VALUES (1, 'Laptop', 1299.99, 10,50);
 INSERT INTO PriceList VALUES (2, 'Mouse', 25.50, 12.00, 5.00);
 INSERT INTO PriceList VALUES (3, 'Keybaord', 89.95, 18.00, 15.00);
 
-
--- Examples from Chapter 3
--- CAST operations to demonstrate precision and scale
-SELECT 
-    CAST(123 AS DECIMAL(5,2)) AS Example1,      -- returns 123.00
-    CAST(12345.12 AS NUMERIC(10,5)) AS Example2; -- returns 12345.12000
-
 -- Calculate final price with tax
 SELECT 
     ProductName,
@@ -32,6 +25,14 @@ SELECT
     CAST(Price - Discount AS DECIMAL(10,2)) AS AfterDiscount,
     CAST((Price - Discount) * (1 + TaxRate/100) AS DECIMAL(10,2)) AS FinalPrice
 FROM PriceList;
+
+-- Examples from Chapter 3
+-- CAST operations to demonstrate precision and scale
+SELECT 
+    CAST(123 AS DECIMAL(5,2)) AS Example1,      -- returns 123.00
+    CAST(12345.12 AS NUMERIC(10,5)) AS Example2; -- returns 12345.12000
+
+
 
 -- View all data
 SELECT * FROM PriceList;
