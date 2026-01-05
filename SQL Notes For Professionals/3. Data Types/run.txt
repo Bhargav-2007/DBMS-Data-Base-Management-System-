@@ -1,0 +1,16 @@
+# Navigate to your directory
+cd "/workspaces/DBMS-Data-Base-Management-System-/SQL Notes For Professionals/3. Data Types"
+
+# Run each section
+sqlite3 datatypes.db < section-3.1/decimal_numeric_demo.sql
+sqlite3 datatypes.db < section-3.2/float_real_demo.sql
+sqlite3 datatypes.db < section-3.3/integer_demo.sql
+sqlite3 datatypes.db < section-3.4/money_demo.sql
+sqlite3 datatypes.db < section-3.5/binary_demo.sql
+sqlite3 datatypes.db < section-3.6/char_varchar_demo.sql
+sqlite3 datatypes.db < section-3.7/nchar_nvarchar_demo.sql
+sqlite3 datatypes.db < section-3.8/uniqueidentifier_demo.sql
+
+# Or
+chmod +x run_all_sections.sh
+./run_all_sections.sh
