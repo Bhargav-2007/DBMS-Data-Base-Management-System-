@@ -1,3 +1,4 @@
+
 -- Section 3.1: DECIMAL and NUMERIC
 -- Both are functionally equivalent with fixed precision
 
