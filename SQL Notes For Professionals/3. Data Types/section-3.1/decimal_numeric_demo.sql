@@ -17,7 +17,7 @@ CREATE TABLE PriceDemo (
 INSERT INTO PriceDemo VALUES (1, 199.99, 199.99, 8.75);
 INSERT INTO PriceDemo VALUES (2, 1234.56, 1234.56, 10.00);
 
--- CAST examples from the book
+-- CAST examples from the PDF book
 SELECT CAST(123 AS DECIMAL(5,2)) AS Example1;  -- returns 123.00
 SELECT CAST(12345.12 AS NUMERIC(10,5)) AS Example2;  -- returns 12345.12000
 
